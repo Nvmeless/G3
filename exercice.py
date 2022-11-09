@@ -114,11 +114,11 @@ def findIndex(tableau, x):
     i = 0
     #definir chaineRetour telle qu'une chaine de caractere vide
     chaineRetour = ''
+    #Je defini un boolen tel que firstTurn est true
     #Tant que i est different du nombre d'elt dans le tableau
     while i != len(tableau):
         #Alors j'attribue a une variable la valeur de tableau a l'index i
         selected = tableau[i]
-        #Je defini un boolen tel que firstTurn est true
         #Si selected est egal a x ET que firstTurn est true
             #Alors on assigne a chaineRetour le retour de str(i)
             #changer la valeur de firstTurn a false
