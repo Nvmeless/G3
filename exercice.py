@@ -104,16 +104,36 @@ concatWithComma(23, "toto") #retourne "23, toto"
 #avec l'ensembles des occurences d'un chiffre e.g.:
 #Pour tableau = [0,1,1,1,0,1,1,0,1]
 #la fonction(tableau, 0) doit renvoyer "0, 4, 7" n'hesitez pas a implementer la premiere fonction ;)
+
+
 tableau = [0,1,1,1,0,1,1,0,1]
 #Definir la fonction findIndex qui itere sur tableau, cherchant l'index
 #des differentes occurences de x
+def findIndex(tableau, x):
     #definir i un index de depart
+    i = 0
     #definir chaineRetour telle qu'une chaine de caractere vide
+    chaineRetour = ''
     #Tant que i est different du nombre d'elt dans le tableau
+    while i != len(tableau):
         #Alors j'attribue a une variable la valeur de tableau a l'index i
-        #j'incremente i de 1
+        selected = tableau[i]
         #Si selected est egal a x
+        if selected == x:
             #Alors j'assigne le retour de concatWithComma tel que : concatWithComma(chaineRetour, i) à chaineRetour
+            chaineRetour = concatWithComma(chaineRetour, i)
+        #j'incremente i de 1
+        i = i + 1
+    #Retourne la chaine retour
+    return chaineRetour
+
+
+
+
+
+
+
+
 #Definir mon indeex
 i = 0 
 while (i != len(tableau)): 
