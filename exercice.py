@@ -118,8 +118,11 @@ def findIndex(tableau, x):
     while i != len(tableau):
         #Alors j'attribue a une variable la valeur de tableau a l'index i
         selected = tableau[i]
-        #Si selected est egal a x
-        if selected == x:
+        #Je defini un boolen tel que firstTurn est true
+        #Si selected est egal a x ET que firstTurn est true
+            #Alors on assigne a chaineRetour le retour de str(i)
+            #changer la valeur de firstTurn a false
+        #Sinon si selected est egal a x 
             #Alors j'assigne le retour de concatWithComma tel que : concatWithComma(chaineRetour, i) à chaineRetour
             chaineRetour = concatWithComma(chaineRetour, i)
         #j'incremente i de 1
