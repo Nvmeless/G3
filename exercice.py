@@ -137,6 +137,9 @@ def findIndex(tableau, x):
 
 
 
+
+
+
 #Definir mon indeex
 i = 0 
 while (i != len(tableau)): 
